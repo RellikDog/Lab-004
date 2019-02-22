@@ -18,7 +18,7 @@ makeArray();
 console.log('hello');
 let blankBuffer = Buffer.from('                                                                                                                                                                         ');
 let codeBuffer = buffer => {
-    for(let j = 0; j < buffer.length; j++){
+    for(let j = 0; j < finalCode.length; j++){
         buffer[j] = finalCode[j];
     }
 }
