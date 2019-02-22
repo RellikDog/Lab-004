@@ -1,0 +1,22 @@
+{
+  "name": "lab-004",
+  "version": "1.0.0",
+  "description": "401JSlab4",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RellikDog/Lab-004.git"
+  },
+  "author": "RickBell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RellikDog/Lab-004/issues"
+  },
+  "homepage": "https://github.com/RellikDog/Lab-004#readme"
+}
