@@ -4,26 +4,17 @@ const fs = require('fs');
 let finalCode = [];
 const codeBlock1 = `const arr = ['karl', 'nich', 'rick'];`;
 const codeBlock2 = `arr.forEach(x => console.log(x));`;
-function makeArray(){
-    for(let i = 0; i < codeBlock1.length; i++){
-        finalCode.push(codeBlock1.charCodeAt(i));
-    }
-    finalCode.push(10);
-    for(let i = 0; i < codeBlock2.length; i++){
-        finalCode.push(codeBlock2.charCodeAt(i));
-    }
-}
-makeArray();
+const makeArray = require('./lib/makeArray');
+const codeBuffer = require('./lib/codeBuffer');
+//
+makeArray(codeBlock1, codeBlock2, finalCode);
 //generate buffer with code
-console.log('hello');
 let blankBuffer = Buffer.from('                                                                                                                                                                         ');
-let codeBuffer = buffer => {
-    for(let j = 0; j < finalCode.length; j++){
-        buffer[j] = finalCode[j];
-    }
-}
-//needs a promise
+let testArr = [100];
+let testBuffer = Buffer.from(' ');
+let newBuffer = codeBuffer(testBuffer, testArr);
+console.log(newBuffer);
+//could use a promise
 codeBuffer(blankBuffer);
 //
-
-fs.writeFileSync('./files/loops.js', blankBuffer);
+fs.writeFileSync('./files/loop.js', blankBuffer);
